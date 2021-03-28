@@ -23,6 +23,6 @@ app.use("/",(req,res,next)=>{
 	res.send("404: api not exist")
 })
 
-app.listen(3000, (err) => {
-	console.info(`Server running on port `, 3000);
+app.listen(process.env.PORT, (err) => {
+	console.info(`Server running on port `, process.env.PORT);
 });
